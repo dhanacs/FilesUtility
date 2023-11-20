@@ -3,8 +3,8 @@ import java.nio.file.*
 // Below code renames all the files in a directory to:
 // Common prefix followed by a number
 def i = 1
-def prefix = "Cats"
-def directoryPath = "C:\\Users\\dhana\\OneDrive\\Pictures\\Wall Papers\\Wild Cats"
+def prefix = "Twin Peak"
+def directoryPath = "C:\\Users\\dhana\\Downloads\\1"
 
 try {
     // Sort the files similiar to that of Windows explorer
@@ -44,5 +44,5 @@ try {
 // Function to extract and parse the numeric part from a filename
 def extractNumericPart(filename) {
     def numericPart = filename.replaceAll("\\D", "")
-    return numericPart.isEmpty() ? 0 : numericPart.toInteger()
+    return numericPart.isEmpty() ? 0 : numericPart.toLong()
 }
